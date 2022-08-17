@@ -1,0 +1,19 @@
+
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option path 'pci0000:00/0000:00:11.0'
+	option cell_density '0'
+	option no_scan '0'
+	option country 'NL'
+	option htmode 'HE80'
+	option band '5g'
+	option channel '149'
+
+config wifi-iface 'default_radio0'
+	option device 'radio0'
+	option network 'lan'
+	option mode 'ap'
+	option ssid 'OpenWrt'
+	option encryption 'psk2'
+	option key 'Rvd@1986@0922'
+
